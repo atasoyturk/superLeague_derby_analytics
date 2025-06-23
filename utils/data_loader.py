@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 import os
 
-def load_data(db_path=r'C:\Users\User\Desktop\lectures\ceng\SQL\derby_games.db'):
+def load_data(db_path=r"C:\Users\User\Desktop\lectures\superLeauge_derby_analytics\data\derby_games.db"):
     try:
         print(f"Connecting to database at: {os.path.abspath(db_path)}")
         conn = sqlite3.connect(db_path)
