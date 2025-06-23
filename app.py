@@ -1,4 +1,5 @@
 from dash import Dash
+import os
 from utils.data_loader import load_data, preprocess_data
 from utils.stats import (
     calculate_correlation,
@@ -22,6 +23,9 @@ def create_team_colors():
         'Trabzonspor': 'maroon'
     }
 
+
+app = Dash(__name__)
+
 def main():
     df = load_data()
     if df is None:
@@ -41,7 +45,6 @@ def main():
     xg_fazla_kaybeden_result = calculate_xg_fazla_kaybeden(df)
     xg_az_kazanan_result = calculate_xg_az_kazanan(df)
 
-    app = Dash(__name__)
     app.layout = create_layout(
         fig, fig2, fig3, fig4,
         correlation, p_value, df,
@@ -52,3 +55,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    app.run_server(host="0.0.0.0", port=int(os.environ.get("PORT", 8050)), debug=False)
+
