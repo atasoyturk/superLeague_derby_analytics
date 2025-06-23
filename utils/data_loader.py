@@ -2,10 +2,12 @@ import sqlite3
 import pandas as pd
 import os
 
-def load_data(db_path=r"C:\Users\User\Desktop\lectures\superLeauge_derby_analytics\data\derby_games.db"):
+def load_data(db_path='data/derby_games.db'):  # Göreceli veritabanı yolu
+    
     try:
-        print(f"Connecting to database at: {os.path.abspath(db_path)}")
-        conn = sqlite3.connect(db_path)
+        abs_path = os.path.abspath(db_path)
+        print(f"Connecting to database at: {abs_path}")
+        conn = sqlite3.connect(abs_path)
         df = pd.read_sql_query("SELECT * FROM match_stats", conn)
     except sqlite3.Error as e:
         print(f"Database error: {e}")
@@ -13,6 +15,7 @@ def load_data(db_path=r"C:\Users\User\Desktop\lectures\superLeauge_derby_analyti
     finally:
         conn.close()
     return df
+
 
 def preprocess_data(df):
     df['xG Difference'] = df['xG_home'] - df['xG_away']
