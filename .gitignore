@@ -24,7 +24,7 @@ logs/
 .idea/
 
 # SQLite database files
-*.db
+#*.db
 
 # Environment files
 *.env
