@@ -1,0 +1,38 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# OS Generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# SQLite database files
+*.db
+
+# Environment files
+*.env
+*.env.local
+
+# Optional files
+*.bak
+*.tmp
+
+# Others
+.ipynb_checkpoints/
