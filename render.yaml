@@ -1,7 +1,7 @@
 services:
   - type: web
     name: superleague-derby-analytics
-    runtime: python-3.12.3
+    runtime: python-3.11.9  
     env: python
     region: oregon
     plan: free
