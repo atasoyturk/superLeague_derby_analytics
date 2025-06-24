@@ -25,6 +25,7 @@ def create_team_colors():
 
 
 app = Dash(__name__)
+server = app.server
 
 def main():
     df = load_data()
