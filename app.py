@@ -51,7 +51,6 @@ def main():
         xg_fazla_kaybeden_result, xg_az_kazanan_result, team_colors
     )
 
-    app.run(debug=True)
 
 if __name__ == '__main__':
     main()
