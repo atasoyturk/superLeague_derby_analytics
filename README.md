@@ -1,10 +1,10 @@
-# ⚽️  Trendyol Super League Analysis of Derby Games (2024–2025)
+# Trendyol Super League Analysis of Derby Games (2024–2025)
 
 An in-depth statistical and visual analysis of Turkish **Süper Lig** derbies, focusing on **Expected Goals (xG)** vs actual match outcomes. This project aims to understand how well xG captures match dynamics and to highlight teams that under- or over-performed relative to their xG in the biggest clashes of the Turkish football calendar.
 
 ---
 
-## 🎯 Purpose
+##  Purpose
 Derby matches are special. They have more emotion, pressure, and unpredictability compared to regular league matches. This project analyzes:
 - The correlation between **xG** and actual match results.
 - Teams that have been:
@@ -17,7 +17,7 @@ _"Is xG a robust predictor of match results in high-intensity derbies, or do emo
 
 ---
 
-## 🗂️ Project Architecture
+##  Project Architecture
 The project is structured into the following components:
 superLeague_derby_analytics/
 
@@ -44,36 +44,36 @@ superLeague_derby_analytics/
 ---
 
 
-## ⚡️ Technologies & Libraries
-- 🐍 **Python** (Data analysis, statistics, plotting)
-- 📊 **Pandas** (Data processing)
-- 📈 **Plotly/Dash** (Dynamic plotting and interactive dashboards)
-- 📉 **SciPy** (Statistical testing, e.g., Pearson correlation)
-- 💾 **SQLite** (Data storage)
+##  Technologies & Libraries
+-  **Python** (Data analysis, statistics, plotting)
+-  **Pandas** (Data processing)
+-  **Plotly/Dash** (Dynamic plotting and interactive dashboards)
+-  **SciPy** (Statistical testing, e.g., Pearson correlation)
+-  **SQLite** (Data storage)
 
 ---
 
-## 🛠️ Getting Started
+##  Getting Started
 
-### 1️⃣ Clone the Repository
+###  Clone the Repository
 ```bash
 git clone https://github.com/atasoyturk/superLeague_derby_analytics.git
 cd superLeague_derby_analytics
 ```
 
 
-### 2️⃣ Install Dependencies
+### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 
-### 3️⃣ Run the App
+### Run the App
 ```bash
 python app.py
 ```
 
-## 📊 Key Insights
+## Key Insights
 **1. xG vs Final Score Correlation:**
 
 The correlation is weaker than expected for derbies, implying that traditional xG metrics may not reliably predict outcomes for high-intensity matches.
@@ -88,13 +88,13 @@ The correlation is weaker than expected for derbies, implying that traditional x
 
 Shows weekly fluctuations in the reliability of xG across the season.
 
-## 📈 Roadmap
+## Roadmap
 
-- 🔥 Incorporate more advanced statistical techniques (e.g., Bayesian inference).
+-  Incorporate more advanced statistical techniques (e.g., Bayesian inference).
 
-- ⚡️ Add ML prediction pipelines.
+-  Add ML prediction pipelines.
 
-- 🌍 Extend coverage beyond the Turkish Süper Lig.
+-  Extend coverage beyond the Turkish Süper Lig.
 
 
 
