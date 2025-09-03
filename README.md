@@ -4,7 +4,7 @@ An in-depth statistical and visual analysis of Turkish **Süper Lig** derbies, f
 
 ---
 
-##  Purpose
+## Purpose
 Derby matches are special. They have more emotion, pressure, and unpredictability compared to regular league matches. This project analyzes:
 - The correlation between **xG** and actual match results.
 - Teams that have been:
@@ -17,7 +17,7 @@ _"Is xG a robust predictor of match results in high-intensity derbies, or do emo
 
 ---
 
-##  Project Architecture
+## Project Architecture
 The project is structured into the following components:
 superLeague_derby_analytics/
 
@@ -44,7 +44,7 @@ superLeague_derby_analytics/
 ---
 
 
-##  Technologies & Libraries
+## Technologies & Libraries
 -  **Python** (Data analysis, statistics, plotting)
 -  **Pandas** (Data processing)
 -  **Plotly/Dash** (Dynamic plotting and interactive dashboards)
@@ -53,9 +53,9 @@ superLeague_derby_analytics/
 
 ---
 
-##  Getting Started
+## Getting Started
 
-###  Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/atasoyturk/superLeague_derby_analytics.git
 cd superLeague_derby_analytics
